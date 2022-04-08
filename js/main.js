@@ -14,7 +14,8 @@
     };
     
     async function getWeatherData(city){
-        let api_key = "9849260713672bbe2e27a9060f844ba4";
+        //Update weather api_key when you want to use it
+        let api_key = "";
         try{
             let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${api_key}`)
             let data = await res.json()
